@@ -1,0 +1,5 @@
+<div *ngIf="totoFoobar">This div is only displayed if the var totoFoobar is true!</div>
+
+<!-- This will create one div for every "customer" in the list "customers", and display their last and first name. -->
+<div *ngFor="let customer of customers">{{customer.last_name + customer.first_name}}</div>
+
