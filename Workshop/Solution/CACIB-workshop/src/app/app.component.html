@@ -1,0 +1,9 @@
+<h1>My employee list!</h1>
+<form *ngIf="employees.length<10">
+  <label>First Name: <input type="text" [formControl]="first"/></label>
+  <label>Last Name: <input type="text" [formControl]="last"/></label>
+  <p>Name written: {{ first.value }} {{ last.value }}</p>
+  <button (click)="addEmployee()">Add Employee</button>
+</form>
+<br/>
+<div *ngFor="let employee of employees">{{ employee.first }} {{employee.last}}</div>
